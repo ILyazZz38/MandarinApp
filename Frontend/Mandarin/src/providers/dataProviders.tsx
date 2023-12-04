@@ -115,4 +115,4 @@ export class DataProvider {
     }
 }
 
-export default new DataProvider(import.meta.env.VITE_BACKEND_API || 'https://localhost:5079/api');
+export default new DataProvider(import.meta.env.VITE_BACKEND_API || 'http://localhost:5079/api');
