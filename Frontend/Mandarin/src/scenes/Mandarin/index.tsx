@@ -65,8 +65,7 @@ const Mandarins = () =>{
                 >
                     <DataGrid rows={mandarins} 
                         columns={columns} 
-                        slots={{ toolbar: GridToolbar }} 
-                        onRowDoubleClick={handleRowDoubleClick}/>
+                        slots={{ toolbar: GridToolbar }} />
                 </Box>
             )}
         </Box>
@@ -89,7 +88,7 @@ export function dateValueFormatter(params: GridValueFormatterParams<Date>): stri
 
 function handleAddClick () {
     console.log('Add Row Data:');;
-    document.location = 'http://127.0.0.1:5173/mandarins/add';
+    document.location = 'http://localhost:5173/mandarins/add';
 };
 
 export default Mandarins;

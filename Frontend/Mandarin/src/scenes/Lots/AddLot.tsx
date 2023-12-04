@@ -88,7 +88,7 @@ const AddLot = () => {
                             DataProvider.create<lot>('Lots', newLot)
                                 .then(() => {
                                     alert('сохранение успешно')
-                                    document.location = 'http://127.0.0.1:5173/lots';
+                                    document.location = 'http://localhost:5173/lots';
                                 })
                                 .catch(() => {
                                     alert('сохранение не успешно')

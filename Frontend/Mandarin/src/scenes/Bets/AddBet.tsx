@@ -103,7 +103,7 @@ const AddBet = () => {
                             DataProvider.create<bet>('Bets', newBet)
                                 .then(() => {
                                     alert('сохранение успешно')
-                                    document.location = 'http://127.0.0.1:5173/bets';
+                                    document.location = 'http://localhost:5173/bets';
                                 })
                                 .catch(() => {
                                     alert('сохранение не успешно')

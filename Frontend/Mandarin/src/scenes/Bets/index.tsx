@@ -63,8 +63,7 @@ const Bets = () =>{
                 >
                     <DataGrid rows={bets} 
                         columns={columns} 
-                        slots={{ toolbar: GridToolbar }} 
-                        onRowDoubleClick={handleRowDoubleClick}/>
+                        slots={{ toolbar: GridToolbar }} />
                 </Box>
             )}
         </Box>
@@ -81,7 +80,7 @@ export function lotValueFormatter(params: GridValueFormatterParams<lot>): string
 
 function handleAddClick () {
     console.log('Add Row Data:');;
-    document.location = 'http://127.0.0.1:5173/bets/add';
+    document.location = 'http://localhost:5173/bets/add';
 };
 
 export default Bets;

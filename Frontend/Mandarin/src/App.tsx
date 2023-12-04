@@ -26,9 +26,9 @@ function App() {
       <main className='content'>
             <Routes>
               <Route path='/mandarins' element={<Mandarins/>} />
-              <Route path='/mandarins/add' element={<RequireAdminAuth><CheckTokenAddMandarin/></RequireAdminAuth>} />
+              <Route path='/mandarins/add' element={<RequireAuth><CheckTokenAddMandarin/></RequireAuth>} />
               <Route path='/lots' element={<RequireAuth><CheckTokenLots/></RequireAuth>} />
-              <Route path='/lots/add' element={<RequireAdminAuth><CheckTokenAddLot/></RequireAdminAuth>} />
+              <Route path='/lots/add' element={<RequireAuth><CheckTokenAddLot/></RequireAuth>} />
               <Route path='/bets' element={<RequireAuth><CheckTokenBets/></RequireAuth>} />
               <Route path='/bets/add' element={<RequireAuth><CheckTokenAddBet/></RequireAuth>} />
               <Route path='/account' element={<RequireReg><CheckTokenAccount/></RequireReg>} />

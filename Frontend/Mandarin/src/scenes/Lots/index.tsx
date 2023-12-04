@@ -63,8 +63,7 @@ const Lots = () =>{
                 >
                     <DataGrid rows={lots} 
                         columns={columns} 
-                        slots={{ toolbar: GridToolbar }} 
-                        onRowDoubleClick={handleRowDoubleClick}/>
+                        slots={{ toolbar: GridToolbar }} />
                 </Box>
             )}
         </Box>
@@ -79,15 +78,9 @@ export function mandarinValueFormatter(params: GridValueFormatterParams<mandarin
     return '';
 };
 
-// export function ownerValueFormatter(params: GridValueFormatterParams<owner>): string {
-//     if(params.value)
-//         return `${params.value.firstName} ${params.value.lastName}`;
-//     return '';
-// };
-
 function handleAddClick () {
     console.log('Add Row Data:');;
-    document.location = 'http://127.0.0.1:5173/lots/add';
+    document.location = 'http://localhost:5173/lots/add';
 };
 
 export default Lots;

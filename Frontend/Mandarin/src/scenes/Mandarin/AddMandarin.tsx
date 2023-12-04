@@ -103,7 +103,7 @@ const AddMandarin = () => {
                             DataProvider.create<mandarin>('Mandarins', newMandarin)
                                 .then(() => {
                                     alert('сохранение успешно')
-                                    document.location = 'http://127.0.0.1:5173/mandarins';
+                                    document.location = 'http://localhost:5173/mandarins';
                                 })
                                 .catch(() => {
                                     alert('сохранение не успешно')
